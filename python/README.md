@@ -23,8 +23,10 @@ Python
         - No need to implement your own exception aggregation (built-in with return_exceptions=True)
     - Can be cancelled natively (task.cancel())
     - No need for locking mechanism (single-threaded event loop)
-    - Can convert blocking operations to non-blocking:
+    - Can convert non-blocking functions that work like blocking to actual non-blocking (for legacy libraries)
         - asyncio.to_thread() for I/O-bound tasks
+    - Can run any function in a separate process (using process pool), and await them!
+        
 
 4. Multiprocessing
     - Results are not returned, need to implement custom solution (e.g., Manager or shared memory)
