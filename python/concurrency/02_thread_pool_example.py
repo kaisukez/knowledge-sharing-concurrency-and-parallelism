@@ -117,4 +117,4 @@ if __name__ == "__main__":
         # thread_pool_waiting_for_the_result_when_an_error_occurs,
         # thread_pool_waiting_for_the_result_exception_aggregation,
         thread_pool_with_cancellation,
-    ) 
+    )

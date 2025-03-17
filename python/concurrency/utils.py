@@ -46,10 +46,12 @@ async def async_io_bound_task(name: str, seconds: float, willError: bool = False
         print(f"Finished {name}")
     return f"{name} result"
 
-def cpu_bound_task(name: str, seconds: float, print_start: bool = True, print_finish: bool = True) -> int:
+def cpu_bound_task(name: str, seconds: float, willError: bool = False, print_start: bool = True, print_finish: bool = True) -> int:
     if print_start:
         print(f"Starting {name}")
     time.sleep(seconds)
+    if willError:
+        raise ValueError(f"{name} error")
     if print_finish:
         print(f"Finished {name}")
     return f"{name} result"

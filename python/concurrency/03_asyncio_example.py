@@ -111,4 +111,4 @@ if __name__ == "__main__":
         # asyncio_waiting_for_the_result_when_an_error_occurs,
         # asyncio_waiting_for_the_result_exception_aggregation,
         asyncio_with_cancellation,
-    ) 
+    )
