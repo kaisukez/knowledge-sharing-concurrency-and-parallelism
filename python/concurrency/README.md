@@ -24,10 +24,7 @@ Python
     - Can be cancelled natively (task.cancel())
     - No need for locking mechanism (single-threaded event loop)
     - Can convert blocking operations to non-blocking:
-        - Blocking I/O: asyncio.to_thread() for I/O-bound tasks
-        - Thread functions: asyncio.to_thread() for thread functions
-        - Process functions: asyncio.to_process() for process functions
-        - Any blocking code: asyncio.to_thread() or asyncio.to_process()
+        - asyncio.to_thread() for I/O-bound tasks
 
 4. Multiprocessing
     - Results are not returned, need to implement custom solution (e.g., Manager or shared memory)
